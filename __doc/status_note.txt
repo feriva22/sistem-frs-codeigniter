@@ -1,0 +1,52 @@
+Status Note sistem FRS
+
+Status mahasiswa
+
+Tidak aktif/keluar, aktif, cuti dan alumni
+
+0: tidak aktif/keluar
+1: aktif
+2: cuti
+3: alumni
+
+Status dosen wali
+0: tidak aktif
+1: aktif
+
+Status dosen Departement
+0: tidak aktif/keluar
+1: aktif
+2: cuti
+
+Status rencan studi
+Kasus : 
+1. Ambil mata kuliah, namun belum diacc, maka status tidak disetujui dan kuota matkul masih Utuh
+2. Ambil mata Kuliah , lalu diacc Oleh dosen wali, maka ubah status dari tida disetujui manjadi disetujui dan kurangi kuota matkul
+3. Sudah ambil mata kuliah, dan diacc, ingin keluar dari matkul ditengah maka ubah status di frs menjadi keluar, tambah kuota matkul, namun jangan tampilkan di transkip untuk kuliah yang keluar, untuk data nilai otomatis E
+4. Mengambil matkul yang Sudah pernah ambil mata kuliah yang sama pada tahun ajaran sebelumnya, maka perbolehkan, namun di transkip hanya menampilkan  nilai matkul yang diambil pada tahun ajaran terakhir
+
+
+rst_target :
+A, AB, B, BC, C, D, E
+rst_bobot:
+4, 3.5 , 3, 2.5, 2, 1.5, 1
+
+rst_status
+0: belum disetujui
+1: disetujui
+2: keluar
+
+Jenis Data master
+
+1. Tahun akademik (tahun dan semester)
+2. Fakultas
+3. Department
+4. Dosen
+5. Mahasiswa (Beserta dosen walinya)
+6. Mata Kuliah
+7. Kuota SKS Mahasiswa per semester
+
+Akses User
+1. Admin , (Akses ke sema data master)
+2. Dosen, (Akses ke profil , Data master FRS Mahasiswa yang dibimbing, Halaman FRS mahasiswa yang mengajukan FRS, Halaman daftar kelas)
+3. Mahasiswa, (Akses ke profil, halaman daftar kelas, halaman pengajuan FRS mahasiswa, disortir berdasarkan semester)
